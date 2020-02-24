@@ -1,5 +1,6 @@
 body {
     margin: 0 auto;
+    max-width: 1280px;
 }
 
 .container {
@@ -11,9 +12,12 @@ header {
     min-height: height: 214px;
     background-color: #445161;
     padding: 4% 4% 5%;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .productPhoto {
+    
     background-color: white;
     height: 214px;
     width: 469px;
@@ -29,16 +33,14 @@ header h1 {
     text-decoration: none;
     line-height: 85%;
     margin: 0;
-}
-
-header a {
-    text-decoration: none;
     color: #ffffff;
 }
 
 header ul {
     list-style-type: none;
     padding-left: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 header li {
@@ -51,6 +53,7 @@ header li {
 
 header i {
     padding-right: 10px;
+    box-sizing: border-box;
 }
 
 /*ABOUT*/
@@ -59,6 +62,8 @@ header i {
     min-height: 214px;
     background-color: #fff;
     padding: 4% 4% 5%;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .aboutPhoto {
@@ -85,14 +90,18 @@ p {
     font-weight: 400;
     color: #333333;
     max-width: 649px;
+    margin: 0;
 }
 
 /*PLUSES*/
 
 .pluses {
     min-height: 214px;
-    background-color: #fff;
+    background-color: #f5f5f5;
     padding: 4% 4% 5%;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
 }
 
 .pluses h2 {
@@ -109,6 +118,7 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
     grid-gap: 10px;
+    margin: 0;
 }
 
 .col {
@@ -126,6 +136,11 @@ p {
     margin: -3px auto 26px;
     padding-left: 5px;
     text-align: justify;
+    box-sizing: border-box;
+}
+
+.pluses .col2row3 p {
+    margin: -3px auto 0;
 }
 
 .pluses i {
@@ -140,11 +155,14 @@ p {
 .screenshots {
     min-height: 214px;
     background-color: #fff;
-    padding: 0 4% 5%;
+    padding: 5% 4%;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .screenshotMini {
     max-width: 580px;
+    margin: 0;
 }
 
 .screenshots h2 {
@@ -154,6 +172,9 @@ p {
     font-weight: 400;
     color: #445161;
     text-align: center;
+    width: 100%;
+    margin: 0 0 20px 0;
+    
 }
 
 .screenshotImg {
@@ -171,7 +192,7 @@ p {
     line-height: 30px;
     font-weight: 400;
     color: #445161;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     line-height: 85%;
 }
 
@@ -182,12 +203,13 @@ p {
     font-weight: 400;
     color: #333333;
     text-align: justify;
+    margin: 0;
 }
 
 .gridScreenshots {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
-    grid-gap: 16px;
+    grid-gap: 30px 16px;
 }
 
 /*REVIEW*/
@@ -196,6 +218,8 @@ p {
     min-height: 214px;
     background-color: #fff;
     padding: 1% 4% 5%;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .reviews h2 {
@@ -205,18 +229,30 @@ p {
     font-weight: 400;
     color: #445161;
     text-align: center;
+    width: 100%;
+    margin: 0 0 20px 0;
 }
 
 .greybackground {
     background-color: #ebebeb;
     padding: 16px;
     max-width: 483px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    position: relative;
+}
+
+.greybackground::before {
+    content: ''; 
+    position: absolute;
+    left: -20px; 
+    top: 30px; 
+    border: 10px solid transparent; 
+    border-right: 10px solid #ebebeb;
 }
 
 .reviews article {
-    max-width: 560px;
     display: flex;
-
 }
 
 .quotePhoto {
@@ -224,6 +260,7 @@ p {
     height: 75px;
     border-radius: 50%;
     background-color: #445161;
+    margin-right: 43px;
 }
 
 .reviews quote {
@@ -256,6 +293,8 @@ p {
     min-height: 214px;
     background-color: #fff;
     padding: 1% 4% 5%;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .buy h2 {
@@ -265,6 +304,8 @@ p {
     font-weight: 400;
     color: #445161;
     text-align: center;
+    width: 100%;
+    margin: 0 0 20px 0;
 }
 
 .standart, .premium, .lux {
@@ -281,6 +322,7 @@ p {
 }
 
 .standart .name, .premium .name, .lux .name {
+    display: block;
     font-family: ArialMT, sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -292,6 +334,7 @@ p {
 }
 .standart .price, .premium .price, .lux .price {
     font-family: ArialMT, sans-serif;
+    display: block;
     font-size: 40px;
     line-height: 70px;
     font-weight: 400;
@@ -310,6 +353,7 @@ p {
     color: #ffffff;
     margin: 0 auto;
     padding: 19px 28px 19px 30px;
+    box-sizing: border-box;
 }
 
 .standart button, .premium button, .lux button {
@@ -321,6 +365,12 @@ p {
     height: 40px;
     margin: 0 5% 20px;
     text-decoration: none;
+    font-family: ArialMT, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #445161;
+    text-transform: uppercase;
 }
 
 .standart button:hover, .premium button:hover, .lux button:hover {
@@ -331,18 +381,6 @@ p {
     background-color: #9c5345;
 }
 
-.standart button a, .premium button a, .lux button a {
-    display: inline-block;
-    text-decoration: none;
-    font-family: ArialMT, sans-serif;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-    color: #445161;
-    width: 261px;
-    height: 40px;
-    margin: -10px 0 0 -10px;
-}
 .flexBuy {
     display: flex;
     justify-content: center;
@@ -355,6 +393,8 @@ p {
     min-height: 509px;
     background-color: #445161;
     padding-top: 50px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .contacts h2 {
@@ -391,6 +431,7 @@ p {
     font-weight: 400;
     color: #445162;
     padding: 10px 0 0 10px;
+    box-sizing: border-box;
 }
 
 .contacts textarea {
@@ -414,6 +455,13 @@ p {
     background-color: #ffffff;
     border-radius: 5px;
     padding: 0;
+    box-sizing: border-box;
+    font-family: ArialMT, sans-serif;
+    font-size: 16px;
+    line-height: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #445162;
 }
 
 .contacts button:hover {
@@ -422,20 +470,6 @@ p {
 
 .contacts button:active {
      background-color: #9c5345;
-}
-
-.contacts button a {
-    display: block;
-    width: 140px;
-    height: 40px;
-    font-family: ArialMT, sans-serif;
-    font-size: 16px;
-    line-height: 38px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #445162;
-    text-decoration: none;
-    margin: -2px 0 0 -2px;
 }
 
 .contactsList {
@@ -447,8 +481,13 @@ p {
     color: #ffffff;
 }
 
+.contactsList > .fa {
+    float: left;
+    margin-right: 5px;
+}
+
 .contactsList span {
-    display: inline-block;
+    display: block;
     margin-bottom: 25px;
 }
 
@@ -466,6 +505,7 @@ p {
 }
 
 .social a {
+    display: block;
     color: #445162;
     display: inline-block;
     height: 42px;
