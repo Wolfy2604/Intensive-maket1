@@ -1,0 +1,497 @@
+body {
+    margin: 0 auto;
+}
+
+.container {
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    min-height: height: 214px;
+    background-color: #445161;
+    padding: 4% 4% 5%;
+}
+
+.productPhoto {
+    background-color: white;
+    height: 214px;
+    width: 469px;
+    float: right;
+    clear: both;
+}
+
+header h1 {
+    font-family: ArialMT, sans-serif;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 85%;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+header li {
+    font-family: ArialMT, sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+header i {
+    padding-right: 10px;
+}
+
+/*ABOUT*/
+
+.about {
+    min-height: 214px;
+    background-color: #fff;
+    padding: 4% 4% 5%;
+}
+
+.aboutPhoto {
+    float: right;
+    clear: both;
+    width: 430px;
+    height: 245px;
+    background-color: #445161;
+}
+
+.about h2 {
+    font-family: ArialMT, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    margin-top: 0;
+}
+
+p {
+    font-family: ArialMT, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    max-width: 649px;
+}
+
+/*PLUSES*/
+
+.pluses {
+    min-height: 214px;
+    background-color: #fff;
+    padding: 4% 4% 5%;
+}
+
+.pluses h2 {
+    font-family: ArialMT, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    text-align: center;
+    margin-top: 0;
+}
+
+.gridPluses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    grid-gap: 10px;
+}
+
+.col {
+    max-width: 565px;
+    display: flex;
+}
+
+.pluses p {
+    font-family: ArialMT, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    max-width: 526px;
+    margin: -3px auto 26px;
+    padding-left: 5px;
+    text-align: justify;
+}
+
+.pluses i {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    color: #445161;
+}
+
+/*SCREENSHOT*/
+
+.screenshots {
+    min-height: 214px;
+    background-color: #fff;
+    padding: 0 4% 5%;
+}
+
+.screenshotMini {
+    max-width: 580px;
+}
+
+.screenshots h2 {
+    font-family: ArialMT, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    text-align: center;
+}
+
+.screenshotImg {
+    width: 200px;
+    height: 150px;
+    background-color: #445161;
+    float: left;
+    clear: both;
+    margin-right: 15px;
+}
+
+.screenshots h3 {
+    font-family: ArialMT, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445161;
+    margin: 0 auto;
+    line-height: 85%;
+}
+
+.screenshots p {
+    font-family: ArialMT, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    text-align: justify;
+}
+
+.gridScreenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    grid-gap: 16px;
+}
+
+/*REVIEW*/
+
+.reviews {
+    min-height: 214px;
+    background-color: #fff;
+    padding: 1% 4% 5%;
+}
+
+.reviews h2 {
+    font-family: ArialMT, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    text-align: center;
+}
+
+.greybackground {
+    background-color: #ebebeb;
+    padding: 16px;
+    max-width: 483px;
+}
+
+.reviews article {
+    max-width: 560px;
+    display: flex;
+
+}
+
+.quotePhoto {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #445161;
+}
+
+.reviews quote {
+    font-family: ArialMT, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #333333;
+
+}
+
+.reviews .author {
+    font-family: ArialMT, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #989898;
+}
+
+.gridReviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    grid-gap: 16px;
+}
+
+/*BUY*/
+
+.buy {
+    min-height: 214px;
+    background-color: #fff;
+    padding: 1% 4% 5%;
+}
+
+.buy h2 {
+    font-family: ArialMT, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    text-align: center;
+}
+
+.standart, .premium, .lux {
+    width: 25%;
+    min-height: 306px;
+    background-color: #445161;
+    border: 2px solid #445162;
+    border-radius: 3%;
+    align-self:flex-end;
+}
+
+.standart, .premium {
+    margin-right: 3.8%;
+}
+
+.standart .name, .premium .name, .lux .name {
+    font-family: ArialMT, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    height: 51px;
+    margin: 0 auto;
+    line-height: 48px;
+}
+.standart .price, .premium .price, .lux .price {
+    font-family: ArialMT, sans-serif;
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: 400;
+    color: #445162;
+    background-color: white;
+    text-align: center;
+    height: 71px;
+    margin: 0 auto;
+}
+    
+.standart ol, .premium ol, .lux ol {
+    font-family: ArialMT, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 auto;
+    padding: 19px 28px 19px 30px;
+}
+
+.standart button, .premium button, .lux button {
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 33px;
+    width: 90%;
+    height: 40px;
+    margin: 0 5% 20px;
+    text-decoration: none;
+}
+
+.standart button:hover, .premium button:hover, .lux button:hover {
+    background-color: #d56c58;
+}
+
+.standart button:active, .premium button:active, .lux button:active {
+    background-color: #9c5345;
+}
+
+.standart button a, .premium button a, .lux button a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: ArialMT, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #445161;
+    width: 261px;
+    height: 40px;
+    margin: -10px 0 0 -10px;
+}
+.flexBuy {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*CONTACTS*/
+
+.contacts {
+    min-height: 509px;
+    background-color: #445161;
+    padding-top: 50px;
+}
+
+.contacts h2 {
+    font-family: ArialMT,sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto 28px;
+}
+
+.flexContacts {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts form {
+    max-width: 500px;
+    text-align: center;
+    margin-right: 46px;
+}
+
+.contacts input {
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 21px;
+}
+
+.contacts input::placeholder {
+    font-family: ArialMT;
+    font-size: 16px;
+    font-weight: 400;
+    color: #445162;
+    padding: 10px 0 0 10px;
+}
+
+.contacts textarea {
+    width: 500px;
+    height: 170px;
+    border-radius: 5px;
+    margin-bottom: 21px;
+}
+
+.contacts textarea::placeholder {
+    font-family: ArialMT;
+    font-size: 16px;
+    font-weight: 400;
+    color: #445162;
+    padding: 10px 0 0 10px;
+}
+
+.contacts button {
+    width: 140px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.contacts button:hover {
+     background-color: #d56c58;
+}
+
+.contacts button:active {
+     background-color: #9c5345;
+}
+
+.contacts button a {
+    display: block;
+    width: 140px;
+    height: 40px;
+    font-family: ArialMT, sans-serif;
+    font-size: 16px;
+    line-height: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #445162;
+    text-decoration: none;
+    margin: -2px 0 0 -2px;
+}
+
+.contactsList {
+    min-width: 240px;
+    font-family: ArialMT, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.contactsList span {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.social {
+    display: flex;
+    margin: 0;
+}
+
+.social .icon {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 6px;
+}
+
+.social a {
+    color: #445162;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerBuffer {
+    height: 26px;
+}
+
+footer {
+    height: 26px;
+    text-align: center;
+    font-family: ArialMT, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: -26px;
+} 
+
+
+@font-face {
+    font-family: "ArialMT";
+    src: url(fonts/ArialMT.ttf) format("truetype");
+}
