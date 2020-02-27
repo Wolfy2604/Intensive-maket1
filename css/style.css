@@ -8,6 +8,27 @@ body {
     margin: 0 auto;
 }
 
+button, [type=submit] {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    outline: 0px solid;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    max-width: 649px;
+    margin: 0;
+    text-align: justify;
+}
+
 header {
     min-height: height: 214px;
     background-color: #445161;
@@ -16,27 +37,34 @@ header {
     width: 100%;
 }
 
-.productPhoto {
-    
+header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+    }
+
+.product_video {
     background-color: white;
     height: 214px;
     width: 469px;
     float: right;
-    clear: both;
+    display: block;
 }
 
 header h1 {
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 60px;
     line-height: 1.2;
     font-weight: 400;
     text-decoration: none;
     line-height: 85%;
-    margin: 0;
+    margin: 0 0 50px 0;
     color: #ffffff;
 }
 
 header ul {
+    margin: 0;
     list-style-type: none;
     padding-left: 0;
     box-sizing: border-box;
@@ -44,7 +72,7 @@ header ul {
 }
 
 header li {
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 20px;
     line-height: 36px;
     font-weight: 400;
@@ -61,21 +89,27 @@ header i {
 .about {
     min-height: 214px;
     background-color: #fff;
-    padding: 4% 4% 5%;
+    padding: 50px;
     box-sizing: border-box;
     width: 100%;
 }
 
-.aboutPhoto {
+.about_photo {
     float: right;
-    clear: both;
     width: 430px;
     height: 245px;
     background-color: #445161;
 }
 
+.about::after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
 .about h2 {
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
@@ -83,17 +117,17 @@ header i {
     margin-top: 0;
 }
 
-p {
-    font-family: ArialMT, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #333333;
-    max-width: 649px;
-    margin: 0;
+.about > p:nth-child(3) {
+    margin-bottom: 20px;
 }
 
 /*PLUSES*/
+
+.grid_pluses, .grid_screenshots, .grid_reviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
 
 .pluses {
     min-height: 214px;
@@ -105,7 +139,7 @@ p {
 }
 
 .pluses h2 {
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
@@ -114,33 +148,35 @@ p {
     margin-top: 0;
 }
 
-.gridPluses {
+.grid_pluses {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
     grid-gap: 10px;
     margin: 0;
+    padding: 0;
 }
 
 .col {
+    min-width: 21%;
     max-width: 565px;
     display: flex;
+    margin-left: 10px;
 }
 
-.pluses p {
-    font-family: ArialMT, sans-serif;
+.pluses li {
+    font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #333333;
     max-width: 526px;
-    margin: -3px auto 26px;
-    padding-left: 5px;
+    margin: 0 auto 24px;
     text-align: justify;
     box-sizing: border-box;
 }
 
-.pluses .col2row3 p {
-    margin: -3px auto 0;
+.pluses .col2row2, .pluses .col2row3 {
+    margin: 0 auto;
 }
 
 .pluses i {
@@ -148,6 +184,7 @@ p {
     height: 32px;
     font-size: 32px;
     color: #445161;
+    margin-right: 5px;
 }
 
 /*SCREENSHOT*/
@@ -155,18 +192,29 @@ p {
 .screenshots {
     min-height: 214px;
     background-color: #fff;
-    padding: 5% 4%;
+    padding: 50px;
     box-sizing: border-box;
     width: 100%;
 }
 
-.screenshotMini {
+.screenshot_mini {
     max-width: 580px;
     margin: 0;
 }
 
+.screenshots > div > figure:nth-child(1), .screenshots > div > figure:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+.screenshot_mini:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+    
 .screenshots h2 {
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
@@ -174,20 +222,27 @@ p {
     text-align: center;
     width: 100%;
     margin: 0 0 20px 0;
-    
+
 }
 
-.screenshotImg {
+.screenshot_img {
     width: 200px;
     height: 150px;
     background-color: #445161;
     float: left;
-    clear: both;
     margin-right: 15px;
+    margin-left: 10px;
+}
+
+.screenshot_img::after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
 }
 
 .screenshots h3 {
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 24px;
     line-height: 30px;
     font-weight: 400;
@@ -197,7 +252,7 @@ p {
 }
 
 .screenshots p {
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -206,10 +261,10 @@ p {
     margin: 0;
 }
 
-.gridScreenshots {
+.grid_screenshots {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
-    grid-gap: 30px 16px;
+    grid-gap: 0 16px;
 }
 
 /*REVIEW*/
@@ -217,13 +272,13 @@ p {
 .reviews {
     min-height: 214px;
     background-color: #fff;
-    padding: 1% 4% 5%;
+    padding: 50px;
     box-sizing: border-box;
     width: 100%;
 }
 
 .reviews h2 {
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
@@ -236,55 +291,66 @@ p {
 .greybackground {
     background-color: #ebebeb;
     padding: 16px;
-    max-width: 483px;
+    max-width: 443px;
     box-sizing: border-box;
     border-radius: 3px;
     position: relative;
+
+}
+
+.grid_reviews figcaption {
+    max-width: 443px;
 }
 
 .greybackground::before {
-    content: ''; 
+    content: '';
     position: absolute;
-    left: -20px; 
-    top: 30px; 
-    border: 10px solid transparent; 
+    left: -20px;
+    top: 30px;
+    border: 10px solid transparent;
     border-right: 10px solid #ebebeb;
 }
 
-.reviews article {
+.grid_reviews > figure {
     display: flex;
+    justify-content: center;
+    margin: 0;
+    max-width: 555px;
 }
 
-.quotePhoto {
+.quote_photo {
     width: 75px;
     height: 75px;
     border-radius: 50%;
     background-color: #445161;
     margin-right: 43px;
+/*    margin-left: 10px;*/
 }
 
-.reviews quote {
-    font-family: ArialMT, sans-serif;
+.reviews p {
+    font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     font-style: italic;
     color: #333333;
-
+    display: block;
+    margin-bottom: 8px;
 }
 
 .reviews .author {
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     color: #989898;
 }
 
-.gridReviews {
+.grid_reviews {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
     grid-gap: 16px;
+    margin: 0;
 }
 
 /*BUY*/
@@ -292,13 +358,13 @@ p {
 .buy {
     min-height: 214px;
     background-color: #fff;
-    padding: 1% 4% 5%;
+    padding: 50px;
     box-sizing: border-box;
     width: 100%;
 }
 
 .buy h2 {
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
@@ -308,22 +374,27 @@ p {
     margin: 0 0 20px 0;
 }
 
-.standart, .premium, .lux {
+.standart,
+.premium,
+.lux {
     width: 25%;
     min-height: 306px;
     background-color: #445161;
     border: 2px solid #445162;
     border-radius: 3%;
-    align-self:flex-end;
+    align-self: flex-end;
 }
 
-.standart, .premium {
+.standart,
+.premium {
     margin-right: 3.8%;
 }
 
-.standart .name, .premium .name, .lux .name {
+.standart .name,
+.premium .name,
+.lux .name {
     display: block;
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
     color: #ffffff;
@@ -332,8 +403,11 @@ p {
     margin: 0 auto;
     line-height: 48px;
 }
-.standart .price, .premium .price, .lux .price {
-    font-family: ArialMT, sans-serif;
+
+.standart .price,
+.premium .price,
+.lux .price {
+    font-family: Arial, sans-serif;
     display: block;
     font-size: 40px;
     line-height: 70px;
@@ -344,9 +418,11 @@ p {
     height: 71px;
     margin: 0 auto;
 }
-    
-.standart ol, .premium ol, .lux ol {
-    font-family: ArialMT, sans-serif;
+
+.standart ol,
+.premium ol,
+.lux ol {
+    font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -356,7 +432,9 @@ p {
     box-sizing: border-box;
 }
 
-.standart button, .premium button, .lux button {
+.standart button,
+.premium button,
+.lux button {
     background-color: white;
     border-radius: 5px;
     text-align: center;
@@ -365,7 +443,7 @@ p {
     height: 40px;
     margin: 0 5% 20px;
     text-decoration: none;
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -373,15 +451,19 @@ p {
     text-transform: uppercase;
 }
 
-.standart button:hover, .premium button:hover, .lux button:hover {
+.standart button:hover,
+.premium button:hover,
+.lux button:hover {
     background-color: #d56c58;
 }
 
-.standart button:active, .premium button:active, .lux button:active {
+.standart button:active,
+.premium button:active,
+.lux button:active {
     background-color: #9c5345;
 }
 
-.flexBuy {
+.flex_buy {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -392,13 +474,13 @@ p {
 .contacts {
     min-height: 509px;
     background-color: #445161;
-    padding-top: 50px;
+    padding: 50px;
     box-sizing: border-box;
     width: 100%;
 }
 
 .contacts h2 {
-    font-family: ArialMT,sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
@@ -407,7 +489,7 @@ p {
     margin: 0 auto 28px;
 }
 
-.flexContacts {
+.flex_contacts {
     display: flex;
     justify-content: center;
 }
@@ -426,7 +508,7 @@ p {
 }
 
 .contacts input::placeholder {
-    font-family: ArialMT;
+    font-family: Arial;
     font-size: 16px;
     font-weight: 400;
     color: #445162;
@@ -442,21 +524,21 @@ p {
 }
 
 .contacts textarea::placeholder {
-    font-family: ArialMT;
+    font-family: Arial;
     font-size: 16px;
     font-weight: 400;
     color: #445162;
     padding: 10px 0 0 10px;
 }
 
-.contacts button {
+.contacts input[type=submit] {
     width: 140px;
     height: 40px;
     background-color: #ffffff;
     border-radius: 5px;
     padding: 0;
     box-sizing: border-box;
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 38px;
     font-weight: 700;
@@ -464,29 +546,36 @@ p {
     color: #445162;
 }
 
-.contacts button:hover {
-     background-color: #d56c58;
+.contacts input[type=submit]:hover {
+    background-color: #d56c58;
 }
 
-.contacts button:active {
-     background-color: #9c5345;
+.contacts input[type=submit]:active {
+    background-color: #9c5345;
 }
 
-.contactsList {
+.contacts_list {
     min-width: 240px;
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #ffffff;
 }
 
-.contactsList > .fa {
+.contacts_list:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.contacts_list > .fa {
     float: left;
     margin-right: 5px;
 }
 
-.contactsList span {
+.contacts_list span {
     display: block;
     margin-bottom: 25px;
 }
@@ -516,22 +605,17 @@ p {
     justify-content: center;
     align-items: center;
 }
-.footerBuffer {
+
+.footer_buffer {
     height: 26px;
 }
 
 footer {
     height: 26px;
     text-align: center;
-    font-family: ArialMT, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     margin-top: -26px;
-} 
-
-
-@font-face {
-    font-family: "ArialMT";
-    src: url(fonts/ArialMT.ttf) format("truetype");
 }
