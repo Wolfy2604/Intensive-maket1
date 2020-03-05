@@ -16,6 +16,7 @@ button, [type=submit] {
     background-color: transparent;
     cursor: pointer;
     outline: 0px solid;
+    box-sizing: border-box;
 }
 
 p {
@@ -31,10 +32,12 @@ p {
 
 header {
     min-height: height: 214px;
-    background-color: #445161;
-    padding: 4% 4% 5%;
+    padding: 50px;
     box-sizing: border-box;
     width: 100%;
+    background-image: url(../img/koloniya_grachey%201.jpg);
+    background: #445161 url(../img/koloniya_grachey%201.jpg) top no-repeat;
+    
 }
 
 header:after {
@@ -46,7 +49,7 @@ header:after {
 
 .product_video {
     background-color: white;
-    height: 214px;
+    height: 264px;
     width: 469px;
     float: right;
     display: block;
@@ -77,6 +80,7 @@ header li {
     line-height: 36px;
     font-weight: 400;
     color: #ffffff;
+    height: 42px;
 }
 
 header i {
@@ -95,6 +99,7 @@ header i {
 }
 
 .about_photo {
+    margin-left: 92px;
     float: right;
     width: 430px;
     height: 245px;
@@ -185,6 +190,7 @@ header i {
     font-size: 32px;
     color: #445161;
     margin-right: 5px;
+    
 }
 
 /*SCREENSHOT*/
