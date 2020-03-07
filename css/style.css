@@ -4,6 +4,7 @@ body {
 }
 
 .container {
+    max-width: 1280px;
     height: 100%;
     margin: 0 auto;
 }
@@ -511,6 +512,7 @@ header i {
     height: 40px;
     border-radius: 5px;
     margin-bottom: 21px;
+    outline: none;
 }
 
 .contacts input::placeholder {
@@ -527,6 +529,7 @@ header i {
     height: 170px;
     border-radius: 5px;
     margin-bottom: 21px;
+    outline: none;
 }
 
 .contacts textarea::placeholder {
